@@ -1,6 +1,4 @@
-* {
-    outline: 1px solid red; /* Visual debug tool */
-}
+
 
 h1 {
     color: #c1ff72;
@@ -48,11 +46,6 @@ p {
 }
 
 
-.card {
-    background-color: transparent;
-    z-index: 0;
-}
-
 #introduction-hero > .profile-container {
     z-index: 0;
     display: grid;
@@ -70,19 +63,24 @@ p {
     background-color: black;
 }
 
-.card {
+.intro-blurbs-container {
+    width: 300px;
     margin-left: 2.5rem;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
 }
 
+.blurb-card {
+    padding: 0;
+    margin: 0;
+}
 
-
-.technologies-summary {
-    z-index: 0;
-    padding-top: 0;
-    height: 35rem;
-    grid-column-start: 1;
-    grid-column-end: 3;
-
+.blurb-card-body > p {
+    padding: 0; 
+    margin: 0;
 }
 
 
@@ -123,14 +121,6 @@ p {
         justify-content: center;
         align-content: center;
         padding-left: 50%;
-    }
-
-    .technologies-summary {
-        z-index: 0;
-        padding-top: 0;
-        grid-row-start: 3;
-        grid-column-end: 4;
-    
     }
 
     p {
