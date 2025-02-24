@@ -24,32 +24,25 @@ p {
 
 .profile-img > .profile-img-container {
     z-index: 0;
-    min-height: 75%;
-    max-height: 100%;
-    aspect-ratio: 1/1;
-    margin-left: -40%;
+    aspect-ratio: 3/2;
+    width: 50%;
     margin-bottom: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr 0.5fr 1fr 1fr 1fr 1fr;
+    margin-top: 0;
     justify-content: center;
     align-content: center;
     outline: 1px solid red;
-    background-image: url(../assets/Website-geodesign-picture-transparent.png);
-    background-size: 100%;
+    background-image: url(../assets/Website-geodesign-profile-framer.png);
+    background-size: cover;
+    background-position: center;
 }
 
 
 .profile-picture {
-    outline: 1px solid greenyellow;
-    max-width: 50%;
+    max-width: 65%;
+    margin-top: -3rem;
+    margin-left: 2.5rem;
     justify-self: center;
     align-self: center;
-    grid-row-start: 1;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-column-start: 1;
 }
 
 
