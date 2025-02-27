@@ -1,5 +1,4 @@
 
-
 p {
     font-family: Bebas Neue;
     color: #FFF;
@@ -7,12 +6,15 @@ p {
 }
 
 .profile-img {
-    background-color: #4281c8;
     z-index: 0;
     height: 35rem;
     margin: 0;
     padding: 0;
+    background-image: url(../assets/profile-img-div-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #4281c8;
+    background-size: 70%;
     margin-bottom: 0;
     padding-bottom: 0;
     display: flex;
@@ -24,13 +26,14 @@ p {
 
 .profile-img > .profile-img-container {
     z-index: 0;
-    aspect-ratio: 3/2;
+    height: 200px;
+    aspect-ratio: 3/1;
     width: 50%;
     margin-bottom: 0;
     margin-top: 0;
     justify-content: center;
     align-content: center;
-    outline: 1px solid red;
+
     background-image: url(../assets/Website-geodesign-profile-framer.png);
     background-size: cover;
     background-position: center;
@@ -39,8 +42,9 @@ p {
 
 .profile-picture {
     max-width: 65%;
+    height: 200px;
     margin-top: -3rem;
-    margin-left: 2.5rem;
+    margin-left: 3.5rem;
     justify-self: center;
     align-self: center;
 }
@@ -59,6 +63,10 @@ p {
 .intro {
     z-index: 0;
     height: 35rem;
+    background-image: url(../assets/Intro-Honeycomb-Pattern.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
     background-color: black;
     display: grid;
     grid-template-columns: 1fr 4fr 0.1fr;
@@ -101,7 +109,7 @@ p {
     grid-column-end: 3;
 }
 
-.intro-blurbs-container {
+.intro-blurbs-container{
     width: 300px;
     margin-left: 2.5rem;
     z-index: 2;
@@ -115,6 +123,10 @@ p {
     margin-bottom: 3rem;
 }
 
+.intro-blurbs-container  > .blurb-card > .blurb-card-body > p{
+    font-family: JetBrains Mono;
+}
+
 .blurb-card {
     padding: 0;
     margin: 0;
@@ -126,11 +138,62 @@ p {
     font-size: large;
 }
 
+@media (max-width: 1260px) {
+    p {
+        max-width: 200px;
+    }
+
+    .intro > h1 {
+
+        color: #c1ff72;
+        font-family: Bebas Neue;
+        margin-top: 5rem;
+        margin-left: rem;
+        letter-spacing: 1rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    
+    }
+
+}
+
+@media (max-width: 1260px) and (min-width: 569px){
+    .intro-blurbs-container{
+        gap: 1rem;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .intro {
+        height: 38rem;
+    }
+
+    .profile-img {
+        height: 38rem;
+    }
+}
 
 @media (max-width: 768px) {
     p {
         max-width: 200px;
     }
+
+    .intro > h1 {
+
+        color: #c1ff72;
+        font-family: Bebas Neue;
+        margin-top: 5rem;
+        margin-left: rem;
+        letter-spacing: 1rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    
+    }
+
 }
 
 @media (max-width: 576px)
@@ -163,14 +226,39 @@ p {
         grid-row-end: 3;
         justify-content: center;
         align-content: center;
-        padding-left: 50%;
+        padding-left: 65%;
+        transform: rotate(180deg);
+        background-color: #4281c8;
+        background-image: url(../assets/profile-img-div-background-mobile.png);
+        background-size: 80%;
+        background-repeat: no-repeat;
     }
 
     p {
         max-width: 100%;
     }
 
+    .profile-img-container {
+        transform: rotate(-180deg)
+    }
+
 }
+
+@media (max-width: 568px) {
+    .intro-blurbs-container{
+        gap: 10rem;
+    }
+}
+
+@media (min-width: 568px) {
+    .profile-img-container {
+        margin-left: -100%;
+    }
+
+}
+
+
+
 
 
 
