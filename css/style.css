@@ -150,7 +150,7 @@ p {
 }
 
 .skills-section-header {
-    border: blueviolet 1px solid;
+    /*border: blueviolet 1px solid;*/
     grid-column-start: 0;
     grid-row-start:0;
 
@@ -170,13 +170,20 @@ p {
     height: 95%;
     width: 95%;
     background-color: #FFF;
+    display: flex;
+    justify-content: center;
     -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
     clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
     
   }
 
+  .tech-hex-inner > img {
+    height: 3rem;
+    align-self: center;
+  }
+
   #skill-square{
-    border: blueviolet 1px solid;
+    /*border: blueviolet 1px solid;*/
     aspect-ratio: 1/1;
     align-items: center;
     justify-content: center;
@@ -184,9 +191,11 @@ p {
 
   }
 
+/*
   #hex-1 {
     background-color: red;
   }
+*/
 
   #skill-square-2 {
 
@@ -196,21 +205,24 @@ p {
     margin-right: -15%;
   }
 
+  /*
   #hex-2 { 
     background-color: yellowgreen;
   }
+  */
 
   #skill-square-3 {
-
     margin-top: 50%;
     margin-bottom: -50%;
     margin-left: 15%;
     margin-right: -15%;
   }
 
+  /*
   #hex-3 { 
     background-color: blue;
   }
+  */
 
   #skill-square-4 {
     margin-top: 50%;
@@ -219,9 +231,11 @@ p {
     margin-left: -15%;
   }
 
+  /*
   #hex-4 {
     background-color: yellow;
   }
+  */
 
   #skill-square-5 {
     margin-top: 50%;
@@ -230,8 +244,33 @@ p {
     margin-left: -15%;
   }
 
+  /*
   #hex-5 {
     background-color: violet;
+  }
+  */
+
+  #skill-square-a {
+
+    margin-left: 30%;
+    margin-right: -30%;
+  }
+
+  #skill-square-b {
+    margin-top: 50%;
+    margin-bottom: -50%;
+    margin-left: 45%;
+    margin-right: -45%;
+  }
+
+  #skill-square-a > .tech-hex-outer {
+    /*background-color: aqua;*/
+    background-color: #4281c8;
+  }
+
+  #skill-square-b > .tech-hex-outer {
+    /*background-color:aquamarine;*/
+    background-color: #4281c8;
   }
 
 @media (max-width: 1260px) {
